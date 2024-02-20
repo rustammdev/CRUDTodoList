@@ -109,7 +109,7 @@ function deleteTode(id){
 function setCompeted(id) {
     const complateTodo = todos.map((item, i) => {
         if (id == i) {
-            return {...item, complate : item.complate == true ? false : true }
+            return {...item, complate :  !item.complate }
         }else {
             return {...item }
         }
